@@ -35,7 +35,7 @@ Current builtin operations:
  - `depth` - push that stack size
  - `clearstack` - clear the stack
  - `if <body> then ` - an optional section. `if` pops a val, and if that val is 0, skips to then. (Branch if zero)
- - `: <name> <body> ;` - a procedure declaration. A new op is added, when it is run, the tokens in the body are evaluated. e.g. `: decr 1 - ; ` will define a new operation `incr`, that increments the valu at the top of the stack.
+ - `: <name> <body> ;` - a procedure declaration. A new op is added, when it is run, the tokens in the body are evaluated. e.g. `: incr 1 + ; ` will define a new operation `incr`, that increments the value at the top of the stack.
  - `nip` - discards the second val from the top
  - `tuck` - copies the top val and inserts it between the second and third
  - `incr` - increments the top value
